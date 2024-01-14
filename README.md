@@ -10,12 +10,12 @@ First place in the country in the great festival of Kharazmi
 The first thing to do is to clone the repository:
 ```sh
 $ git clone https://github.com/mahyardelbari/math_app
+```
 $ cd math_app
 Create a virtual environment to install dependencies in and activate it:
 ```sh
 $ pyhton -m venv venv
 $ .\env\bin\activate
-
 ```
 
 
