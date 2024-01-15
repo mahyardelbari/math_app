@@ -4,8 +4,7 @@
 
 ## Setup
 
-First place in the country in the great festival of Kharazmi
-
+First place in the national competition of kharazmi festival
 ## Installation
 The first thing to do is to clone the repository:
 ```sh
