@@ -701,3 +701,76 @@ def delete_all_tajzie(self):
     self.ui.label_543.clear()
     inp1 = self.ui.lineEdit_55.clear()
     inp2 = self.ui.lineEdit_54.clear()
+
+# Darsad
+
+
+def darsad_giri(self):
+    results_message = ""
+
+    try:
+        # A az b
+        if self.ui.lineEdit_66.text() and self.ui.lineEdit_63.text() != None:
+            inp1 = self.ui.lineEdit_66.text()
+            inp1 = float(inp1)
+            inp2 = self.ui.lineEdit_63.text()
+            inp2 = float(inp2)
+            result_A_az_b = (inp1/100)*inp2
+            
+            # Check if the result is not NaN or Infinity
+            if not math.isnan(result_A_az_b) and not math.isinf(result_A_az_b):
+                results_message += f"{int(inp1)}درصد از {int(inp2)}برابر است با {int(result_A_az_b)}\n"
+            else:
+                results_message += "لطفاً مقادیر را به درستی وارد کنید\n"
+    except:
+        results_message += "لطفاً مقادیر را به درستی وارد کنید\n"
+
+    try:
+        # a chand darsad b hast
+        if self.ui.lineEdit_65.text() and self.ui.lineEdit_62.text() != None:
+            x1 = self.ui.lineEdit_65.text()
+            x1 = float(x1)
+            x2 = self.ui.lineEdit_62.text()
+            x2 = float(x2)
+            result_a_chand_b = (x1/x2)*100
+            
+            # Check if the result is not NaN or Infinity
+            if not math.isnan(result_a_chand_b) and not math.isinf(result_a_chand_b):
+                results_message += f"{int(x1)}برابر است با %{int(result_a_chand_b)} عدد {int(x2)}\n"
+            else:
+                results_message += "لطفاً مقادیر را به درستی وارد کنید\n"
+    except:
+        results_message += "لطفاً مقادیر را به درستی وارد کنید\n"
+
+    try:
+        # taghirat a az b
+        if self.ui.lineEdit_64.text() and self.ui.lineEdit_61.text() != None:
+            y1 = float(self.ui.lineEdit_64.text())
+            y2 = float(self.ui.lineEdit_61.text())
+            result_a_taghirat_b = ((y2-y1)/y1)*100
+            
+            # Check if the result is not NaN or Infinity
+            if not math.isnan(result_a_taghirat_b) and not math.isinf(result_a_taghirat_b):
+                results_message += f"درصد تغییر از {int(y1)}به {int(y2)}برابر است با %{int(result_a_taghirat_b)}\n"
+            else:
+                results_message += "لطفاً مقادیر را به درستی وارد کنید\n"
+    except:
+        results_message += "لطفاً مقادیر را به درستی وارد کنید\n"
+
+    messagebox = QMessageBox()
+    messagebox.setText(results_message)
+    messagebox.setStandardButtons(QMessageBox.Ok)
+    messagebox.exec()
+    self.ui.lineEdit_66.clear()
+    self.ui.lineEdit_63.clear()
+    self.ui.lineEdit_65.clear()
+    self.ui.lineEdit_62.clear()
+    self.ui.lineEdit_64.clear()
+    self.ui.lineEdit_61.clear()
+    
+
+
+
+
+
+

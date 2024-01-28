@@ -45,6 +45,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addLayout(self.horizontalLayout)
         self.verticalLayout_5.addWidget(self.widget)
         self.stackedWidget = QtWidgets.QStackedWidget(self.widget_3)
+        self.stackedWidget.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         self.stackedWidget.setStyleSheet("background-color: #0D1B2A")
         self.stackedWidget.setObjectName("stackedWidget")
         self.page_riaz = QtWidgets.QWidget()
@@ -52,10 +53,12 @@ class Ui_MainWindow(object):
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.page_riaz)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
         self.widget_2 = QtWidgets.QWidget(self.page_riaz)
+        self.widget_2.setEnabled(True)
+        self.widget_2.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.widget_2.setStyleSheet("background-color:#0D1B2A")
         self.widget_2.setObjectName("widget_2")
         self.btn_aval_6 = QtWidgets.QPushButton(self.widget_2)
-        self.btn_aval_6.setGeometry(QtCore.QRect(8, 240, 341, 101))
+        self.btn_aval_6.setGeometry(QtCore.QRect(8, 235, 341, 101))
         self.btn_aval_6.setMinimumSize(QtCore.QSize(300, 101))
         self.btn_aval_6.setMaximumSize(QtCore.QSize(999, 999))
         font = QtGui.QFont()
@@ -71,7 +74,7 @@ class Ui_MainWindow(object):
 "border-width: 2px 2px 2px 2px;")
         self.btn_aval_6.setObjectName("btn_aval_6")
         self.btn_aval_3 = QtWidgets.QPushButton(self.widget_2)
-        self.btn_aval_3.setGeometry(QtCore.QRect(388, 120, 331, 101))
+        self.btn_aval_3.setGeometry(QtCore.QRect(380, 121, 331, 101))
         self.btn_aval_3.setMinimumSize(QtCore.QSize(300, 101))
         self.btn_aval_3.setMaximumSize(QtCore.QSize(999, 999))
         font = QtGui.QFont()
@@ -79,15 +82,18 @@ class Ui_MainWindow(object):
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
+        font.setStyleStrategy(QtGui.QFont.PreferDefault)
         self.btn_aval_3.setFont(font)
-        self.btn_aval_3.setStyleSheet(" background-color: #000; color: #fff; padding: 0px;\n"
+        self.btn_aval_3.setMouseTracking(False)
+        self.btn_aval_3.setTabletTracking(False)
+        self.btn_aval_3.setStyleSheet("background-color: #000; color: #fff; padding: 0px;\n"
 "border-radius: 12px;\n"
 "border-style: solid;\n"
 "border-color: #6096B4;\n"
 "border-width: 2px 2px 2px 2px;")
         self.btn_aval_3.setObjectName("btn_aval_3")
         self.btn_aval = QtWidgets.QPushButton(self.widget_2)
-        self.btn_aval.setGeometry(QtCore.QRect(389, 6, 331, 101))
+        self.btn_aval.setGeometry(QtCore.QRect(380, 3, 331, 101))
         self.btn_aval.setMinimumSize(QtCore.QSize(300, 101))
         self.btn_aval.setMaximumSize(QtCore.QSize(999, 999))
         font = QtGui.QFont()
@@ -119,7 +125,7 @@ class Ui_MainWindow(object):
 "border-width: 2px 2px 2px 2px;")
         self.btn_aval_2.setObjectName("btn_aval_2")
         self.btn_aval_7 = QtWidgets.QPushButton(self.widget_2)
-        self.btn_aval_7.setGeometry(QtCore.QRect(388, 240, 331, 101))
+        self.btn_aval_7.setGeometry(QtCore.QRect(379, 235, 331, 101))
         self.btn_aval_7.setMinimumSize(QtCore.QSize(300, 101))
         self.btn_aval_7.setMaximumSize(QtCore.QSize(999, 999))
         font = QtGui.QFont()
@@ -135,7 +141,7 @@ class Ui_MainWindow(object):
 "border-width: 2px 2px 2px 2px;")
         self.btn_aval_7.setObjectName("btn_aval_7")
         self.btn_aval_8 = QtWidgets.QPushButton(self.widget_2)
-        self.btn_aval_8.setGeometry(QtCore.QRect(8, 360, 341, 101))
+        self.btn_aval_8.setGeometry(QtCore.QRect(10, 352, 331, 101))
         self.btn_aval_8.setMinimumSize(QtCore.QSize(300, 101))
         self.btn_aval_8.setMaximumSize(QtCore.QSize(999, 999))
         font = QtGui.QFont()
@@ -151,7 +157,7 @@ class Ui_MainWindow(object):
 "border-width: 2px 2px 2px 2px;")
         self.btn_aval_8.setObjectName("btn_aval_8")
         self.btn_aval_10 = QtWidgets.QPushButton(self.widget_2)
-        self.btn_aval_10.setGeometry(QtCore.QRect(390, 360, 331, 101))
+        self.btn_aval_10.setGeometry(QtCore.QRect(380, 352, 331, 101))
         self.btn_aval_10.setMinimumSize(QtCore.QSize(300, 101))
         self.btn_aval_10.setMaximumSize(QtCore.QSize(999, 999))
         font = QtGui.QFont()
@@ -183,7 +189,7 @@ class Ui_MainWindow(object):
 "border-width: 2px 2px 2px 2px;")
         self.btn_aval_9.setObjectName("btn_aval_9")
         self.btn_aval_11 = QtWidgets.QPushButton(self.widget_2)
-        self.btn_aval_11.setGeometry(QtCore.QRect(390, 470, 331, 101))
+        self.btn_aval_11.setGeometry(QtCore.QRect(380, 466, 331, 101))
         self.btn_aval_11.setMinimumSize(QtCore.QSize(300, 101))
         self.btn_aval_11.setMaximumSize(QtCore.QSize(999, 999))
         font = QtGui.QFont()
@@ -198,36 +204,40 @@ class Ui_MainWindow(object):
 "border-color: #6096B4;\n"
 "border-width: 2px 2px 2px 2px;")
         self.btn_aval_11.setObjectName("btn_aval_11")
+        self.btn_aval_20 = QtWidgets.QPushButton(self.widget_2)
+        self.btn_aval_20.setGeometry(QtCore.QRect(10, 466, 331, 101))
+        self.btn_aval_20.setMinimumSize(QtCore.QSize(300, 101))
+        self.btn_aval_20.setMaximumSize(QtCore.QSize(999, 999))
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.btn_aval_20.setFont(font)
+        self.btn_aval_20.setStyleSheet(" background-color: #000; color: #fff; padding: 0px;\n"
+"border-radius: 12px;\n"
+"border-style: solid;\n"
+"border-color: #6096B4;\n"
+"border-width: 2px 2px 2px 2px;")
+        self.btn_aval_20.setObjectName("btn_aval_20")
         self.verticalLayout_9.addWidget(self.widget_2)
         self.stackedWidget.addWidget(self.page_riaz)
         self.page_dar = QtWidgets.QWidget()
         self.page_dar.setObjectName("page_dar")
         self.label_5 = QtWidgets.QLabel(self.page_dar)
-        self.label_5.setGeometry(QtCore.QRect(230, 0, 451, 41))
+        self.label_5.setGeometry(QtCore.QRect(630, 130, 111, 41))
         font = QtGui.QFont()
-        font.setPointSize(16)
+        font.setPointSize(18)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
         self.label_5.setFont(font)
-        self.label_5.setStyleSheet("font-size:100vw;\n"
-"color:rgb(255, 255, 255)\n"
+        self.label_5.setStyleSheet("color:rgb(255, 255, 255);\n"
+"font: 18pt;\n"
 "")
         self.label_5.setObjectName("label_5")
-        self.label_7 = QtWidgets.QLabel(self.page_dar)
-        self.label_7.setGeometry(QtCore.QRect(40, 50, 641, 41))
-        font = QtGui.QFont()
-        font.setPointSize(16)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet("font:16pt;\n"
-"color:rgb(255, 255, 255)\n"
-"")
-        self.label_7.setObjectName("label_7")
         self.label_31 = QtWidgets.QLabel(self.page_dar)
-        self.label_31.setGeometry(QtCore.QRect(0, 90, 681, 71))
+        self.label_31.setGeometry(QtCore.QRect(300, 180, 431, 71))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(False)
@@ -239,7 +249,7 @@ class Ui_MainWindow(object):
 "")
         self.label_31.setObjectName("label_31")
         self.label_32 = QtWidgets.QLabel(self.page_dar)
-        self.label_32.setGeometry(QtCore.QRect(0, 160, 681, 61))
+        self.label_32.setGeometry(QtCore.QRect(370, 260, 361, 61))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(False)
@@ -251,11 +261,47 @@ class Ui_MainWindow(object):
 "")
         self.label_32.setObjectName("label_32")
         self.label_33 = QtWidgets.QLabel(self.page_dar)
-        self.label_33.setGeometry(QtCore.QRect(50, 220, 631, 351))
+        self.label_33.setGeometry(QtCore.QRect(630, 0, 81, 61))
+        self.label_33.setStyleSheet("font:14pt;\n"
+"color:rgb(255, 255, 255)\n"
+"")
         self.label_33.setText("")
         self.label_33.setPixmap(QtGui.QPixmap(":/Downloads/1681613106505.jpg"))
         self.label_33.setScaledContents(True)
+        self.label_33.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_33.setObjectName("label_33")
+        self.label_191 = QtWidgets.QLabel(self.page_dar)
+        self.label_191.setGeometry(QtCore.QRect(-20, 50, 761, 71))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_191.setFont(font)
+        self.label_191.setStyleSheet("font:25pt;\n"
+"color:rgb(255, 255, 255)\n"
+"")
+        self.label_191.setText("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:25pt; font-weight:400; font-style:normal;\">\n"
+"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">نرم افزار &lt;&lt;دانشور&gt;&gt; از یک ایده ساده بر اساس نیاز دانش اموزان شکل گرفت.</span></p>\n"
+"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">نرم افزاری که حجم بالایی از خدمات و با سهولت در اختیار دانش اموزان در ایران قرار میدهد.</span></p></body></html>")
+        self.label_191.setTextFormat(QtCore.Qt.AutoText)
+        self.label_191.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_191.setObjectName("label_191")
+        self.label_211 = QtWidgets.QLabel(self.page_dar)
+        self.label_211.setGeometry(QtCore.QRect(580, 340, 151, 61))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_211.setFont(font)
+        self.label_211.setStyleSheet("font:14pt;\n"
+"color:rgb(255, 255, 255)\n"
+"")
+        self.label_211.setObjectName("label_211")
         self.stackedWidget.addWidget(self.page_dar)
         self.page_adad_aval = QtWidgets.QWidget()
         self.page_adad_aval.setMaximumSize(QtCore.QSize(636, 16777215))
@@ -280,11 +326,14 @@ class Ui_MainWindow(object):
         self.label_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_3.setObjectName("label_3")
         self.lineEdit_22 = QtWidgets.QLineEdit(self.page_adad_aval)
-        self.lineEdit_22.setGeometry(QtCore.QRect(110, 71, 301, 31))
+        self.lineEdit_22.setGeometry(QtCore.QRect(110, 70, 301, 31))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.lineEdit_22.setFont(font)
-        self.lineEdit_22.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.lineEdit_22.setStyleSheet("background-color: #0D1B2A;\n"
+"border:2px solid #fff;\n"
+"border-radius: 3px;\n"
+"")
         self.lineEdit_22.setObjectName("lineEdit_22")
         self.label_25 = QtWidgets.QLabel(self.page_adad_aval)
         self.label_25.setGeometry(QtCore.QRect(107, 172, 301, 31))
@@ -337,7 +386,8 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_28.setFont(font)
-        self.label_28.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.label_28.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border:2px")
         self.label_28.setText("")
         self.label_28.setObjectName("label_28")
         self.label_29 = QtWidgets.QLabel(self.page_adad_aval)
@@ -368,21 +418,21 @@ class Ui_MainWindow(object):
         self.label_30.setText("")
         self.label_30.setObjectName("label_30")
         self.pushButton_17 = QtWidgets.QPushButton(self.page_adad_aval)
-        self.pushButton_17.setGeometry(QtCore.QRect(370, 450, 241, 51))
+        self.pushButton_17.setGeometry(QtCore.QRect(380, 450, 241, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_17.setFont(font)
         self.pushButton_17.setStyleSheet("#pushButton_17{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_17:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_17.setObjectName("pushButton_17")
         self.pushButton_21 = QtWidgets.QPushButton(self.page_adad_aval)
@@ -393,14 +443,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_21.setFont(font)
         self.pushButton_21.setStyleSheet("#pushButton_21{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_21:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_21.setObjectName("pushButton_21")
         self.label_34 = QtWidgets.QLabel(self.page_adad_aval)
@@ -468,11 +517,18 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         font.setWeight(50)
         self.btn_sorat.setFont(font)
-        self.btn_sorat.setStyleSheet(" background-color: #000; color: #fff; padding: 0px;\n"
+        self.btn_sorat.setStyleSheet("#btn_sorat{\n"
+"\n"
+"background-color: #000; color: #fff; padding: 0px;\n"
 "border-radius: 12px;\n"
 "border-style: solid;\n"
 "border-color: #6096B4;\n"
-"border-width: 2px 2px 2px 2px;")
+"border-width: 2px 2px 2px 2px;\n"
+"}\n"
+"#btn_sorat:hover {\n"
+"background-color: #fff;\n"
+"color:#000000;\n"
+"}")
         self.btn_sorat.setObjectName("btn_sorat")
         self.btn_sorat_5 = QtWidgets.QPushButton(self.widget_4)
         self.btn_sorat_5.setGeometry(QtCore.QRect(0, 0, 341, 101))
@@ -586,14 +642,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_20.setFont(font)
         self.pushButton_20.setStyleSheet("#pushButton_20{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_20:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_20.setObjectName("pushButton_20")
         self.pushButton_15 = QtWidgets.QPushButton(self.page_sorat)
@@ -604,14 +660,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_15.setFont(font)
         self.pushButton_15.setStyleSheet("#pushButton_15{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_15:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_15.setObjectName("pushButton_15")
         self.label_13 = QtWidgets.QLabel(self.page_sorat)
@@ -802,14 +857,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_19.setFont(font)
         self.pushButton_19.setStyleSheet("#pushButton_19{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_19:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_19.setObjectName("pushButton_19")
         self.pushButton_13 = QtWidgets.QPushButton(self.page_shetab)
@@ -820,14 +875,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_13.setFont(font)
         self.pushButton_13.setStyleSheet("#pushButton_13{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_13:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_13.setObjectName("pushButton_13")
         self.label_12 = QtWidgets.QLabel(self.page_shetab)
@@ -1065,14 +1119,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_27.setFont(font)
         self.pushButton_27.setStyleSheet("#pushButton_27{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_27:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_27.setObjectName("pushButton_27")
         self.pushButton_28 = QtWidgets.QPushButton(self.page_etehad)
@@ -1083,14 +1137,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_28.setFont(font)
         self.pushButton_28.setStyleSheet("#pushButton_28{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_28:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_28.setObjectName("pushButton_28")
         self.pushButton_29 = QtWidgets.QPushButton(self.page_etehad)
@@ -1101,14 +1155,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_29.setFont(font)
         self.pushButton_29.setStyleSheet("#pushButton_29{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_29:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_29.setObjectName("pushButton_29")
         self.pushButton = QtWidgets.QPushButton(self.page_etehad)
@@ -1137,14 +1191,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_14.setFont(font)
         self.pushButton_14.setStyleSheet("#pushButton_14{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_14:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_14.setObjectName("pushButton_14")
         self.label_238 = QtWidgets.QLabel(self.page_etehad)
@@ -1376,39 +1429,38 @@ class Ui_MainWindow(object):
         self.label_24.setText("")
         self.label_24.setObjectName("label_24")
         self.pushButton_16 = QtWidgets.QPushButton(self.page_andaze)
-        self.pushButton_16.setGeometry(QtCore.QRect(50, 500, 291, 51))
+        self.pushButton_16.setGeometry(QtCore.QRect(400, 500, 291, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_16.setFont(font)
         self.pushButton_16.setStyleSheet("#pushButton_16{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_16:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_16.setObjectName("pushButton_16")
         self.pushButton_30 = QtWidgets.QPushButton(self.page_andaze)
-        self.pushButton_30.setGeometry(QtCore.QRect(398, 500, 291, 51))
+        self.pushButton_30.setGeometry(QtCore.QRect(50, 500, 291, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_30.setFont(font)
         self.pushButton_30.setStyleSheet("#pushButton_30{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_30:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_30.setObjectName("pushButton_30")
         self.label_239 = QtWidgets.QLabel(self.page_andaze)
@@ -1525,21 +1577,21 @@ class Ui_MainWindow(object):
         self.label_45.setText("")
         self.label_45.setObjectName("label_45")
         self.pushButton_18 = QtWidgets.QPushButton(self.page_bmi)
-        self.pushButton_18.setGeometry(QtCore.QRect(50, 440, 311, 51))
+        self.pushButton_18.setGeometry(QtCore.QRect(370, 440, 311, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_18.setFont(font)
         self.pushButton_18.setStyleSheet("#pushButton_18{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_18:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_18.setObjectName("pushButton_18")
         self.label_47 = QtWidgets.QLabel(self.page_bmi)
@@ -1552,21 +1604,20 @@ class Ui_MainWindow(object):
         self.label_47.setText("")
         self.label_47.setObjectName("label_47")
         self.pushButton_42 = QtWidgets.QPushButton(self.page_bmi)
-        self.pushButton_42.setGeometry(QtCore.QRect(379, 440, 291, 51))
+        self.pushButton_42.setGeometry(QtCore.QRect(50, 440, 291, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_42.setFont(font)
         self.pushButton_42.setStyleSheet("#pushButton_42{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_42:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_42.setObjectName("pushButton_42")
         self.label_46 = QtWidgets.QLabel(self.page_bmi)
@@ -1784,39 +1835,38 @@ class Ui_MainWindow(object):
         self.lineEdit_7.setText("")
         self.lineEdit_7.setObjectName("lineEdit_7")
         self.pushButton_22 = QtWidgets.QPushButton(self.page_fisa)
-        self.pushButton_22.setGeometry(QtCore.QRect(126, 470, 241, 51))
+        self.pushButton_22.setGeometry(QtCore.QRect(410, 470, 241, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_22.setFont(font)
         self.pushButton_22.setStyleSheet("#pushButton_22{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_22:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_22.setObjectName("pushButton_22")
         self.pushButton_23 = QtWidgets.QPushButton(self.page_fisa)
-        self.pushButton_23.setGeometry(QtCore.QRect(391, 470, 241, 51))
+        self.pushButton_23.setGeometry(QtCore.QRect(90, 470, 241, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_23.setFont(font)
         self.pushButton_23.setStyleSheet("#pushButton_23{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_23:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_23.setObjectName("pushButton_23")
         self.lineEdit_44 = QtWidgets.QLineEdit(self.page_fisa)
@@ -1965,14 +2015,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_34.setFont(font)
         self.pushButton_34.setStyleSheet("#pushButton_34{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
-"#pushButton_34:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"#pushButton_24:hover{\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_34.setObjectName("pushButton_34")
         self.pushButton_31 = QtWidgets.QPushButton(self.page_feshar_jamed)
@@ -1982,16 +2031,15 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_31.setFont(font)
-        self.pushButton_31.setStyleSheet("#pushButton_31\n"
-"{\n"
-"background-color:rgb(0, 0, 0);\n"
+        self.pushButton_31.setStyleSheet("#pushButton_31{\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_31:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_31.setObjectName("pushButton_31")
         self.label_201 = QtWidgets.QLabel(self.page_feshar_jamed)
@@ -2143,7 +2191,7 @@ class Ui_MainWindow(object):
         self.widget_10.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.widget_10.setObjectName("widget_10")
         self.btn_feshar_jamed = QtWidgets.QPushButton(self.widget_10)
-        self.btn_feshar_jamed.setGeometry(QtCore.QRect(390, 60, 331, 101))
+        self.btn_feshar_jamed.setGeometry(QtCore.QRect(380, 60, 331, 101))
         self.btn_feshar_jamed.setMinimumSize(QtCore.QSize(0, 101))
         font = QtGui.QFont()
         font.setPointSize(15)
@@ -2226,14 +2274,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_35.setFont(font)
         self.pushButton_35.setStyleSheet("#pushButton_35{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_35:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_35.setObjectName("pushButton_35")
         self.label_104 = QtWidgets.QLabel(self.page_feshar_maye)
@@ -2345,14 +2392,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_36.setFont(font)
         self.pushButton_36.setStyleSheet("#pushButton_36{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_36:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_36.setObjectName("pushButton_36")
         self.label_243 = QtWidgets.QLabel(self.page_feshar_maye)
@@ -2415,14 +2462,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_38.setFont(font)
         self.pushButton_38.setStyleSheet("#pushButton_38{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_38:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_38.setObjectName("pushButton_38")
         self.pushButton_37 = QtWidgets.QPushButton(self.page_wiki)
@@ -2440,14 +2487,13 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.pushButton_37.setFont(font)
         self.pushButton_37.setStyleSheet("#pushButton_37{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_37:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}\n"
 "")
         self.pushButton_37.setObjectName("pushButton_37")
@@ -2654,14 +2700,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_40.setFont(font)
         self.pushButton_40.setStyleSheet("#pushButton_40{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_40:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_40.setObjectName("pushButton_40")
         self.label_116 = QtWidgets.QLabel(self.page_kore)
@@ -2680,14 +2725,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_41.setFont(font)
         self.pushButton_41.setStyleSheet("#pushButton_41{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_41:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_41.setObjectName("pushButton_41")
         self.pushButton_57 = QtWidgets.QPushButton(self.page_kore)
@@ -2698,14 +2742,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_57.setFont(font)
         self.pushButton_57.setStyleSheet("#pushButton_57{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_57:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_57.setObjectName("pushButton_57")
         self.label_120 = QtWidgets.QLabel(self.page_kore)
@@ -2742,14 +2786,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_58.setFont(font)
         self.pushButton_58.setStyleSheet("#pushButton_58{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_58:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_58.setObjectName("pushButton_58")
         self.label_244 = QtWidgets.QLabel(self.page_kore)
@@ -2941,14 +2985,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_47.setFont(font)
         self.pushButton_47.setStyleSheet("#pushButton_47{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_47:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_47.setObjectName("pushButton_47")
         self.pushButton_46 = QtWidgets.QPushButton(self.page_mokab)
@@ -2959,14 +3003,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_46.setFont(font)
         self.pushButton_46.setStyleSheet("#pushButton_46{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_46:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_46.setObjectName("pushButton_46")
         self.label_132 = QtWidgets.QLabel(self.page_mokab)
@@ -2985,14 +3028,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_59.setFont(font)
         self.pushButton_59.setStyleSheet("#pushButton_59{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_59:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_59.setObjectName("pushButton_59")
         self.pushButton_60 = QtWidgets.QPushButton(self.page_mokab)
@@ -3003,14 +3046,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_60.setFont(font)
         self.pushButton_60.setStyleSheet("#pushButton_60{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_60:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_60.setObjectName("pushButton_60")
         self.label_245 = QtWidgets.QLabel(self.page_mokab)
@@ -3125,14 +3167,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_48.setFont(font)
         self.pushButton_48.setStyleSheet("#pushButton_48{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_48:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_48.setObjectName("pushButton_48")
         self.label_143 = QtWidgets.QLabel(self.page_ostovane)
@@ -3154,14 +3195,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_49.setFont(font)
         self.pushButton_49.setStyleSheet("#pushButton_49{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_49:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_49.setObjectName("pushButton_49")
         self.label_142 = QtWidgets.QLabel(self.page_ostovane)
@@ -3295,14 +3336,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_193.setFont(font)
         self.pushButton_193.setStyleSheet("#pushButton_193{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_193:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_193.setObjectName("pushButton_193")
         self.pushButton_50 = QtWidgets.QPushButton(self.page_ostovane)
@@ -3313,14 +3354,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_50.setFont(font)
         self.pushButton_50.setStyleSheet("#pushButton_50{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_50:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_50.setObjectName("pushButton_50")
         self.label_246 = QtWidgets.QLabel(self.page_ostovane)
@@ -3441,7 +3481,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 702, 2000))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 647, 2000))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -3689,43 +3729,39 @@ class Ui_MainWindow(object):
         self.label_158.setAlignment(QtCore.Qt.AlignCenter)
         self.label_158.setObjectName("label_158")
         self.pushButton_32 = QtWidgets.QPushButton(self.page_jom)
-        self.pushButton_32.setGeometry(QtCore.QRect(165, 420, 211, 50))
+        self.pushButton_32.setGeometry(QtCore.QRect(390, 400, 231, 50))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_32.setFont(font)
         self.pushButton_32.setStyleSheet("#pushButton_32{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
-"\n"
 "}\n"
 "#pushButton_32:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
-"}\n"
-"")
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
+"}")
         self.pushButton_32.setObjectName("pushButton_32")
         self.pushButton_55 = QtWidgets.QPushButton(self.page_jom)
-        self.pushButton_55.setGeometry(QtCore.QRect(410, 420, 211, 51))
+        self.pushButton_55.setGeometry(QtCore.QRect(140, 400, 211, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_55.setFont(font)
         self.pushButton_55.setStyleSheet("#pushButton_55{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_55:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
-"}\n"
-"")
+"background-color:rgb(193, 46, 61)\n"
+"}")
         self.pushButton_55.setObjectName("pushButton_55")
         self.label_247 = QtWidgets.QLabel(self.page_jom)
         self.label_247.setGeometry(QtCore.QRect(240, 20, 281, 41))
@@ -4053,16 +4089,15 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_45.setFont(font)
         self.pushButton_45.setStyleSheet("#pushButton_45{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_45:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
-"}\n"
-"")
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
+"}")
         self.pushButton_45.setObjectName("pushButton_45")
         self.label_234 = QtWidgets.QLabel(self.page_hendese)
         self.label_234.setGeometry(QtCore.QRect(230, 20, 301, 41))
@@ -4129,39 +4164,38 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_8.setObjectName("pushButton_8")
         self.pushButton_51 = QtWidgets.QPushButton(self.page_ghadr_motlagh)
-        self.pushButton_51.setGeometry(QtCore.QRect(170, 470, 211, 51))
+        self.pushButton_51.setGeometry(QtCore.QRect(410, 460, 211, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_51.setFont(font)
         self.pushButton_51.setStyleSheet("#pushButton_51{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_51:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_51.setObjectName("pushButton_51")
         self.pushButton_61 = QtWidgets.QPushButton(self.page_ghadr_motlagh)
-        self.pushButton_61.setGeometry(QtCore.QRect(400, 470, 221, 51))
+        self.pushButton_61.setGeometry(QtCore.QRect(160, 460, 221, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_61.setFont(font)
         self.pushButton_61.setStyleSheet("#pushButton_61{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_61:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_61.setObjectName("pushButton_61")
         self.label_249 = QtWidgets.QLabel(self.page_ghadr_motlagh)
@@ -4218,14 +4252,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_62.setFont(font)
         self.pushButton_62.setStyleSheet("#pushButton_62{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_62:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_62.setObjectName("pushButton_62")
         self.pushButton_63 = QtWidgets.QPushButton(self.page_mosalas)
@@ -4236,14 +4270,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_63.setFont(font)
         self.pushButton_63.setStyleSheet("#pushButton_63{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_63:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_63.setObjectName("pushButton_63")
         self.textEdit_2 = QtWidgets.QTextEdit(self.page_mosalas)
@@ -4294,14 +4327,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_66.setFont(font)
         self.pushButton_66.setStyleSheet("#pushButton_66{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
-"border:2px solid #87CBB9;\n"
 "}\n"
 "#pushButton_66:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_66.setObjectName("pushButton_66")
         self.lineEdit_50 = QtWidgets.QLineEdit(self.page_moadele_2)
@@ -4344,14 +4377,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_67.setFont(font)
         self.pushButton_67.setStyleSheet("#pushButton_67{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_67:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_67.setObjectName("pushButton_67")
         self.pushButton_68 = QtWidgets.QPushButton(self.page_moadele_2)
@@ -4362,15 +4395,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_68.setFont(font)
         self.pushButton_68.setStyleSheet("#pushButton_68{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
-"\n"
 "}\n"
 "#pushButton_68:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_68.setObjectName("pushButton_68")
         self.pushButton_6 = QtWidgets.QPushButton(self.page_moadele_2)
@@ -4523,14 +4554,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_69.setFont(font)
         self.pushButton_69.setStyleSheet("#pushButton_69{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_69:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_69.setObjectName("pushButton_69")
         self.pushButton_70 = QtWidgets.QPushButton(self.page_chegali)
@@ -4541,14 +4572,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_70.setFont(font)
         self.pushButton_70.setStyleSheet("#pushButton_70{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_70:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_70.setObjectName("pushButton_70")
         self.label_232 = QtWidgets.QLabel(self.page_chegali)
@@ -4661,14 +4691,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_64.setFont(font)
         self.pushButton_64.setStyleSheet("#pushButton_64{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_64:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_64.setObjectName("pushButton_64")
         self.pushButton_65 = QtWidgets.QPushButton(self.page_moadele_hal)
@@ -4679,14 +4709,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_65.setFont(font)
         self.pushButton_65.setStyleSheet("#pushButton_65{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_65:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_65.setObjectName("pushButton_65")
         self.textEdit_3 = QtWidgets.QTextEdit(self.page_moadele_hal)
@@ -4787,14 +4816,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_72.setFont(font)
         self.pushButton_72.setStyleSheet("#pushButton_72{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_72:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_72.setObjectName("pushButton_72")
         self.pushButton_73 = QtWidgets.QPushButton(self.page_factor)
@@ -4805,14 +4833,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_73.setFont(font)
         self.pushButton_73.setStyleSheet("#pushButton_73{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_73:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_73.setObjectName("pushButton_73")
         self.textEdit_4 = QtWidgets.QTextEdit(self.page_factor)
@@ -4892,14 +4920,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_91.setFont(font)
         self.pushButton_91.setStyleSheet("#pushButton_91{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_91:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_91.setObjectName("pushButton_91")
         self.label_179 = QtWidgets.QLabel(self.moraba_hendese)
@@ -4929,14 +4957,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_92.setFont(font)
         self.pushButton_92.setStyleSheet("#pushButton_92{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_92:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_92.setObjectName("pushButton_92")
         self.label_181 = QtWidgets.QLabel(self.moraba_hendese)
@@ -5029,14 +5056,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_93.setFont(font)
         self.pushButton_93.setStyleSheet("#pushButton_93{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_93:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_93.setObjectName("pushButton_93")
         self.label_186 = QtWidgets.QLabel(self.mtsvi_zel_hendse)
@@ -5102,14 +5128,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_94.setFont(font)
         self.pushButton_94.setStyleSheet("#pushButton_94{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_94:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_94.setObjectName("pushButton_94")
         self.label_189 = QtWidgets.QLabel(self.mtsvi_zel_hendse)
@@ -5201,14 +5227,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_95.setFont(font)
         self.pushButton_95.setStyleSheet("#pushButton_95{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_95:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_95.setObjectName("pushButton_95")
         self.label_212 = QtWidgets.QLabel(self.hendese_mostatil)
@@ -5267,21 +5292,21 @@ class Ui_MainWindow(object):
         self.label_214.setText("")
         self.label_214.setObjectName("label_214")
         self.pushButton_96 = QtWidgets.QPushButton(self.hendese_mostatil)
-        self.pushButton_96.setGeometry(QtCore.QRect(450, 490, 161, 51))
+        self.pushButton_96.setGeometry(QtCore.QRect(455, 490, 161, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_96.setFont(font)
         self.pushButton_96.setStyleSheet("#pushButton_96{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_96:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_96.setObjectName("pushButton_96")
         self.label_215 = QtWidgets.QLabel(self.hendese_mostatil)
@@ -5304,7 +5329,7 @@ class Ui_MainWindow(object):
         self.label_215.setAlignment(QtCore.Qt.AlignCenter)
         self.label_215.setObjectName("label_215")
         self.label_258 = QtWidgets.QLabel(self.hendese_mostatil)
-        self.label_258.setGeometry(QtCore.QRect(110, 96, 541, 261))
+        self.label_258.setGeometry(QtCore.QRect(110, 100, 541, 261))
         self.label_258.setStyleSheet("color :#fff;\n"
 "background-color: rgb(87, 197, 182);\n"
 "font : 12pt;\n"
@@ -5350,11 +5375,12 @@ class Ui_MainWindow(object):
         self.pushButton_197.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_197.setObjectName("pushButton_197")
         self.lineEdit_108 = QtWidgets.QLineEdit(self.hendese_mostatil)
-        self.lineEdit_108.setGeometry(QtCore.QRect(460, 399, 161, 31))
+        self.lineEdit_108.setGeometry(QtCore.QRect(460, 400, 161, 31))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.lineEdit_108.setFont(font)
-        self.lineEdit_108.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.lineEdit_108.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border:solid 2x #fff;")
         self.lineEdit_108.setObjectName("lineEdit_108")
         self.lineEdit_109 = QtWidgets.QLineEdit(self.hendese_mostatil)
         self.lineEdit_109.setGeometry(QtCore.QRect(460, 440, 161, 31))
@@ -5374,14 +5400,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_97.setFont(font)
         self.pushButton_97.setStyleSheet("#pushButton_97{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_97:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_97.setObjectName("pushButton_97")
         self.label_263 = QtWidgets.QLabel(self.chanZelii_hendse)
@@ -5515,14 +5541,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_200.setFont(font)
         self.pushButton_200.setStyleSheet("#pushButton_200{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_200:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_200.setObjectName("pushButton_200")
         self.lineEdit_112 = QtWidgets.QLineEdit(self.chanZelii_hendse)
@@ -5894,14 +5919,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_213.setFont(font)
         self.pushButton_213.setStyleSheet("#pushButton_213{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color:#198754;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #198754;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_213:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
 "}")
         self.pushButton_213.setObjectName("pushButton_213")
         self.pushButton_214 = QtWidgets.QPushButton(self.kmm_bmm)
@@ -5912,14 +5937,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_214.setFont(font)
         self.pushButton_214.setStyleSheet("#pushButton_214{\n"
-"background-color:rgb(0, 0, 0);\n"
+"background-color: #dc3545;\n"
 "color: rgb(255, 255, 255);\n"
-"border:2px solid #87CBB9;\n"
+"border:2px solid #dc3545;\n"
 "border-radius: 7px;\n"
 "}\n"
 "#pushButton_214:hover{\n"
-"background-color: #fff;\n"
-"color:#000000;\n"
+"background-color:rgb(193, 46, 61)\n"
 "}")
         self.pushButton_214.setObjectName("pushButton_214")
         self.stackedWidget.addWidget(self.kmm_bmm)
@@ -6008,10 +6032,16 @@ class Ui_MainWindow(object):
         self.comboBox_4.setGeometry(QtCore.QRect(130, 82, 231, 41))
         font = QtGui.QFont()
         font.setPointSize(14)
+        font.setUnderline(False)
+        font.setStrikeOut(False)
+        font.setKerning(True)
         self.comboBox_4.setFont(font)
+        self.comboBox_4.setFocusPolicy(QtCore.Qt.TabFocus)
         self.comboBox_4.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.comboBox_4.setAutoFillBackground(False)
-        self.comboBox_4.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.comboBox_4.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"")
+        self.comboBox_4.setInsertPolicy(QtWidgets.QComboBox.NoInsert)
         self.comboBox_4.setObjectName("comboBox_4")
         self.comboBox_4.addItem("")
         self.comboBox_4.addItem("")
@@ -6021,6 +6051,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(16)
         self.comboBox_5.setFont(font)
+        self.comboBox_5.setFocusPolicy(QtCore.Qt.NoFocus)
         self.comboBox_5.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.comboBox_5.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.comboBox_5.setObjectName("comboBox_5")
@@ -6067,13 +6098,312 @@ class Ui_MainWindow(object):
 "border-width: 2px 2px 2px 2px;")
         self.btn_aval_19.setObjectName("btn_aval_19")
         self.stackedWidget.addWidget(self.page_shomarande)
+        self.drsd_giri = QtWidgets.QWidget()
+        self.drsd_giri.setObjectName("drsd_giri")
+        self.pushButton_215 = QtWidgets.QPushButton(self.drsd_giri)
+        self.pushButton_215.setGeometry(QtCore.QRect(60, 60, 261, 51))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_215.setFont(font)
+        self.pushButton_215.setStyleSheet("#pushButton_215{\n"
+"background-color:#198754;\n"
+"color: rgb(255, 255, 255);\n"
+"border:2px solid #198754;\n"
+"border-radius: 7px;\n"
+"}\n"
+"#pushButton_215:hover{\n"
+"background-color: #157448;\n"
+"border:2x sloid#5cb85c;\n"
+"}")
+        self.pushButton_215.setObjectName("pushButton_215")
+        self.label_448 = QtWidgets.QLabel(self.drsd_giri)
+        self.label_448.setGeometry(QtCore.QRect(240, 10, 281, 41))
+        self.label_448.setStyleSheet("color :#fff;\n"
+"font : 12pt;\n"
+"border-radius: 5px;\n"
+"border:1px solid #fff;\n"
+"")
+        self.label_448.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_448.setObjectName("label_448")
+        self.label_559 = QtWidgets.QLabel(self.drsd_giri)
+        self.label_559.setGeometry(QtCore.QRect(440, 70, 311, 40))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_559.setFont(font)
+        self.label_559.setStyleSheet("font : 11pt;\n"
+"background-color: #0D1B2A;\n"
+"color : rgb(255, 255, 255);\n"
+"font-weight: 400;\n"
+"padding: 2px;")
+        self.label_559.setTextFormat(QtCore.Qt.RichText)
+        self.label_559.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_559.setObjectName("label_559")
+        self.widget_13 = QtWidgets.QWidget(self.drsd_giri)
+        self.widget_13.setGeometry(QtCore.QRect(54, 463, 641, 111))
+        self.widget_13.setStyleSheet("background-color: #57C5B6;\n"
+"border-radius: 10px;\n"
+"")
+        self.widget_13.setObjectName("widget_13")
+        self.widget_16 = QtWidgets.QWidget(self.widget_13)
+        self.widget_16.setGeometry(QtCore.QRect(370, 18, 211, 80))
+        self.widget_16.setStyleSheet("background-color: #57C5B6;\n"
+"border-radius: 20px;\n"
+"border: 2px solid  rgb(255, 255, 255);")
+        self.widget_16.setObjectName("widget_16")
+        self.lineEdit_64 = QtWidgets.QLineEdit(self.widget_16)
+        self.lineEdit_64.setGeometry(QtCore.QRect(32, 19, 151, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit_64.setFont(font)
+        self.lineEdit_64.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 12px;")
+        self.lineEdit_64.setText("")
+        self.lineEdit_64.setFrame(False)
+        self.lineEdit_64.setDragEnabled(False)
+        self.lineEdit_64.setPlaceholderText("")
+        self.lineEdit_64.setClearButtonEnabled(False)
+        self.lineEdit_64.setObjectName("lineEdit_64")
+        self.widget_17 = QtWidgets.QWidget(self.widget_13)
+        self.widget_17.setGeometry(QtCore.QRect(60, 17, 211, 80))
+        self.widget_17.setStyleSheet("background-color: #57C5B6;\n"
+"border-radius: 20px;\n"
+"opacity: 100;\n"
+"border: 2px solid  rgb(255, 255, 255);")
+        self.widget_17.setObjectName("widget_17")
+        self.lineEdit_61 = QtWidgets.QLineEdit(self.widget_17)
+        self.lineEdit_61.setGeometry(QtCore.QRect(30, 20, 151, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit_61.setFont(font)
+        self.lineEdit_61.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 12px;")
+        self.lineEdit_61.setText("")
+        self.lineEdit_61.setFrame(False)
+        self.lineEdit_61.setDragEnabled(False)
+        self.lineEdit_61.setPlaceholderText("")
+        self.lineEdit_61.setClearButtonEnabled(False)
+        self.lineEdit_61.setObjectName("lineEdit_61")
+        self.label_271 = QtWidgets.QLabel(self.widget_13)
+        self.label_271.setGeometry(QtCore.QRect(444, -8, 121, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_271.setFont(font)
+        self.label_271.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label_271.setTextFormat(QtCore.Qt.RichText)
+        self.label_271.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_271.setObjectName("label_271")
+        self.label_272 = QtWidgets.QLabel(self.widget_13)
+        self.label_272.setGeometry(QtCore.QRect(217, -5, 41, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_272.setFont(font)
+        self.label_272.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label_272.setTextFormat(QtCore.Qt.RichText)
+        self.label_272.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_272.setObjectName("label_272")
+        self.label_560 = QtWidgets.QLabel(self.drsd_giri)
+        self.label_560.setGeometry(QtCore.QRect(450, 243, 311, 40))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_560.setFont(font)
+        self.label_560.setStyleSheet("font : 11pt;\n"
+"background-color: #0D1B2A;\n"
+"color : rgb(255, 255, 255);\n"
+"font-weight: 400;\n"
+"padding: 2px;")
+        self.label_560.setTextFormat(QtCore.Qt.RichText)
+        self.label_560.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_560.setObjectName("label_560")
+        self.label_561 = QtWidgets.QLabel(self.drsd_giri)
+        self.label_561.setGeometry(QtCore.QRect(384, 419, 311, 40))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_561.setFont(font)
+        self.label_561.setStyleSheet("font : 11pt;\n"
+"background-color: #0D1B2A;\n"
+"color : rgb(255, 255, 255);\n"
+"font-weight: 400;\n"
+"padding: 2px;")
+        self.label_561.setTextFormat(QtCore.Qt.RichText)
+        self.label_561.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_561.setObjectName("label_561")
+        self.widget_18 = QtWidgets.QWidget(self.drsd_giri)
+        self.widget_18.setGeometry(QtCore.QRect(60, 290, 641, 111))
+        self.widget_18.setStyleSheet("background-color: #57C5B6;\n"
+"border-radius: 10px;\n"
+"")
+        self.widget_18.setObjectName("widget_18")
+        self.widget_19 = QtWidgets.QWidget(self.widget_18)
+        self.widget_19.setGeometry(QtCore.QRect(370, 18, 211, 80))
+        self.widget_19.setStyleSheet("background-color: #57C5B6;\n"
+"border-radius: 20px;\n"
+"border: 2px solid  rgb(255, 255, 255);")
+        self.widget_19.setObjectName("widget_19")
+        self.lineEdit_65 = QtWidgets.QLineEdit(self.widget_19)
+        self.lineEdit_65.setGeometry(QtCore.QRect(32, 19, 151, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit_65.setFont(font)
+        self.lineEdit_65.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 12px;")
+        self.lineEdit_65.setText("")
+        self.lineEdit_65.setFrame(False)
+        self.lineEdit_65.setDragEnabled(False)
+        self.lineEdit_65.setPlaceholderText("")
+        self.lineEdit_65.setClearButtonEnabled(False)
+        self.lineEdit_65.setObjectName("lineEdit_65")
+        self.widget_20 = QtWidgets.QWidget(self.widget_18)
+        self.widget_20.setGeometry(QtCore.QRect(60, 17, 211, 80))
+        self.widget_20.setStyleSheet("background-color: #57C5B6;\n"
+"border-radius: 20px;\n"
+"opacity: 100;\n"
+"border: 2px solid  rgb(255, 255, 255);")
+        self.widget_20.setObjectName("widget_20")
+        self.lineEdit_62 = QtWidgets.QLineEdit(self.widget_20)
+        self.lineEdit_62.setGeometry(QtCore.QRect(30, 20, 151, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit_62.setFont(font)
+        self.lineEdit_62.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 12px;")
+        self.lineEdit_62.setText("")
+        self.lineEdit_62.setFrame(False)
+        self.lineEdit_62.setDragEnabled(False)
+        self.lineEdit_62.setPlaceholderText("")
+        self.lineEdit_62.setClearButtonEnabled(False)
+        self.lineEdit_62.setObjectName("lineEdit_62")
+        self.label_273 = QtWidgets.QLabel(self.widget_18)
+        self.label_273.setGeometry(QtCore.QRect(520, -5, 41, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_273.setFont(font)
+        self.label_273.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label_273.setTextFormat(QtCore.Qt.RichText)
+        self.label_273.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_273.setObjectName("label_273")
+        self.label_274 = QtWidgets.QLabel(self.widget_18)
+        self.label_274.setGeometry(QtCore.QRect(217, -5, 41, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_274.setFont(font)
+        self.label_274.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label_274.setTextFormat(QtCore.Qt.RichText)
+        self.label_274.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_274.setObjectName("label_274")
+        self.widget_21 = QtWidgets.QWidget(self.drsd_giri)
+        self.widget_21.setGeometry(QtCore.QRect(60, 120, 641, 111))
+        self.widget_21.setStyleSheet("background-color: #57C5B6;\n"
+"border-radius: 10px;\n"
+"")
+        self.widget_21.setObjectName("widget_21")
+        self.widget_22 = QtWidgets.QWidget(self.widget_21)
+        self.widget_22.setGeometry(QtCore.QRect(370, 18, 211, 80))
+        self.widget_22.setStyleSheet("background-color: #57C5B6;\n"
+"border-radius: 20px;\n"
+"border: 2px solid  rgb(255, 255, 255);")
+        self.widget_22.setObjectName("widget_22")
+        self.lineEdit_66 = QtWidgets.QLineEdit(self.widget_22)
+        self.lineEdit_66.setGeometry(QtCore.QRect(32, 19, 151, 41))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Ignored, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_66.sizePolicy().hasHeightForWidth())
+        self.lineEdit_66.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit_66.setFont(font)
+        self.lineEdit_66.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.lineEdit_66.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 12px;")
+        self.lineEdit_66.setText("")
+        self.lineEdit_66.setFrame(False)
+        self.lineEdit_66.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.lineEdit_66.setDragEnabled(False)
+        self.lineEdit_66.setPlaceholderText("")
+        self.lineEdit_66.setClearButtonEnabled(False)
+        self.lineEdit_66.setObjectName("lineEdit_66")
+        self.widget_23 = QtWidgets.QWidget(self.widget_21)
+        self.widget_23.setGeometry(QtCore.QRect(60, 17, 211, 80))
+        self.widget_23.setStyleSheet("background-color: #57C5B6;\n"
+"border-radius: 20px;\n"
+"opacity: 100;\n"
+"border: 2px solid  rgb(255, 255, 255);")
+        self.widget_23.setObjectName("widget_23")
+        self.lineEdit_63 = QtWidgets.QLineEdit(self.widget_23)
+        self.lineEdit_63.setGeometry(QtCore.QRect(30, 20, 151, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit_63.setFont(font)
+        self.lineEdit_63.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 12px;")
+        self.lineEdit_63.setText("")
+        self.lineEdit_63.setFrame(False)
+        self.lineEdit_63.setDragEnabled(False)
+        self.lineEdit_63.setPlaceholderText("")
+        self.lineEdit_63.setClearButtonEnabled(False)
+        self.lineEdit_63.setObjectName("lineEdit_63")
+        self.label_275 = QtWidgets.QLabel(self.widget_21)
+        self.label_275.setGeometry(QtCore.QRect(520, -5, 41, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_275.setFont(font)
+        self.label_275.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label_275.setTextFormat(QtCore.Qt.RichText)
+        self.label_275.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_275.setObjectName("label_275")
+        self.label_276 = QtWidgets.QLabel(self.widget_21)
+        self.label_276.setGeometry(QtCore.QRect(217, -5, 41, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_276.setFont(font)
+        self.label_276.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label_276.setTextFormat(QtCore.Qt.RichText)
+        self.label_276.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_276.setObjectName("label_276")
+        self.stackedWidget.addWidget(self.drsd_giri)
         self.verticalLayout_5.addWidget(self.stackedWidget)
         self.gridLayout.addWidget(self.widget_3, 0, 0, 1, 1)
         self.full_menu_widget = QtWidgets.QWidget(self.centralwidget)
         self.full_menu_widget.setStyleSheet("")
         self.full_menu_widget.setObjectName("full_menu_widget")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.full_menu_widget)
-        self.verticalLayout_3.setContentsMargins(0, -1, -1, -1)
+        self.verticalLayout_3.setContentsMargins(0, 11, 11, 11)
+        self.verticalLayout_3.setSpacing(4)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.label_2 = QtWidgets.QLabel(self.full_menu_widget)
         self.label_2.setStyleSheet("color:white")
@@ -6081,7 +6411,8 @@ class Ui_MainWindow(object):
         self.label_2.setObjectName("label_2")
         self.verticalLayout_3.addWidget(self.label_2)
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_2.setSpacing(0)
+        self.verticalLayout_2.setContentsMargins(2, 2, 2, 0)
+        self.verticalLayout_2.setSpacing(1)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.btn_riaz2 = QtWidgets.QPushButton(self.full_menu_widget)
         font = QtGui.QFont()
@@ -6213,7 +6544,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(44)
+        self.stackedWidget.setCurrentIndex(52)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -6228,12 +6559,13 @@ class Ui_MainWindow(object):
         self.btn_aval_10.setText(_translate("MainWindow", "معادله"))
         self.btn_aval_9.setText(_translate("MainWindow", "الگوریتم غربال اراتستن"))
         self.btn_aval_11.setText(_translate("MainWindow", "حل مرحله به مرحله"))
-        self.label_5.setText(_translate("MainWindow", " طراحان:امیرعلی عباسی و مهیار دلبری "))
-        self.label_7.setText(_translate("MainWindow", " خراسان رضوی شهرستان سبزوار مدرسه ی دانشوران"))
+        self.btn_aval_20.setText(_translate("MainWindow", "درصد گیری"))
+        self.label_5.setText(_translate("MainWindow", " طراحان:"))
         self.label_31.setText(_translate("MainWindow", " امیرعلی عباسی شاد: Aizen1n \n"
 " جیمیل : abbasiamir11223344@gmail.com"))
         self.label_32.setText(_translate("MainWindow", " مهیار دلبری شاد: programing76 \n"
 " جیمیل : mahyardelbarii@gmail.com"))
+        self.label_211.setText(_translate("MainWindow", "<html><head/><body><p align=\"right\"><a href=\"https://daneshvar.com/\"><span style=\" text-decoration: underline; color:#ffffff;\">وبسایت دانشور</span></a></p></body></html>"))
         self.label_3.setText(_translate("MainWindow", "    عدد"))
         self.label_26.setText(_translate("MainWindow", "اول/مرکب"))
         self.label_27.setText(_translate("MainWindow", "    تعداد شمارنده ها"))
@@ -6626,6 +6958,7 @@ class Ui_MainWindow(object):
         self.btn_aval_17.setText(_translate("MainWindow", "مثلث متساوی الاضلاع"))
         self.label_447.setText(_translate("MainWindow", "صفحه تجزیه"))
         self.label_6.setText(_translate("MainWindow", "    عدد"))
+        self.lineEdit_55.setToolTip(_translate("MainWindow", "<p>slm</p>"))
         self.label_91.setText(_translate("MainWindow", "    عدد"))
         self.label_176.setText(_translate("MainWindow", "مقسوم علیه‌ ها"))
         self.label_180.setText(_translate("MainWindow", "مضرب‌ها"))
@@ -6642,12 +6975,13 @@ class Ui_MainWindow(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:19pt; font-weight:400; font-style:normal;\">\n"
 "<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">دروسی که میتوانید از ان ها استفاده کنید:</span></p>\n"
-"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">    فارسی</span></p>\n"
-"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">    پیام های آسمان</span></p>\n"
-"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">    ریاضی</span></p>\n"
-"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">    عربی</span></p>\n"
-"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">    مطالعات اجتماعی</span></p>\n"
-"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">    انگلیسی</span></p>\n"
+"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">نهم:</span></p>\n"
+"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">     فارسی</span></p>\n"
+"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">     پیام های آسمان</span></p>\n"
+"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">     ریاضی</span></p>\n"
+"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">     عربی</span></p>\n"
+"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">     مطالعات اجتماعی</span></p>\n"
+"<p dir=\'rtl\' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">     انگلیسی</span></p>\n"
 "<p dir=\'rtl\' style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;\"><br /></p>\n"
 "<p dir=\'rtl\' style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p>\n"
 "<p dir=\'rtl\' style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p></body></html>"))
@@ -6663,6 +6997,17 @@ class Ui_MainWindow(object):
         self.comboBox_5.setItemText(6, _translate("MainWindow", "پیام های آسمان"))
         self.btn_aval_18.setText(_translate("MainWindow", "اعداد اول"))
         self.btn_aval_19.setText(_translate("MainWindow", "تجزیه"))
+        self.pushButton_215.setText(_translate("MainWindow", "محاسبه"))
+        self.label_448.setText(_translate("MainWindow", "صفحه درصد گیری"))
+        self.label_559.setText(_translate("MainWindow", "آ درصد از ب چقدر میشود؟"))
+        self.label_271.setText(_translate("MainWindow", "درصد تغیرات از "))
+        self.label_272.setText(_translate("MainWindow", "تا"))
+        self.label_560.setText(_translate("MainWindow", "آ چند درصد ب است؟"))
+        self.label_561.setText(_translate("MainWindow", "درصد تغییرات از آ به ب چند درصد است؟"))
+        self.label_273.setText(_translate("MainWindow", "آ"))
+        self.label_274.setText(_translate("MainWindow", "ب"))
+        self.label_275.setText(_translate("MainWindow", "آ"))
+        self.label_276.setText(_translate("MainWindow", "ب"))
         self.label_2.setText(_translate("MainWindow", "دانشور"))
         self.btn_riaz2.setText(_translate("MainWindow", "ریاضی"))
         self.btn_olom2.setText(_translate("MainWindow", "فیزیک"))
@@ -6675,13 +7020,3 @@ class Ui_MainWindow(object):
         self.btn_salamat2_9.setText(_translate("MainWindow", "اموزش"))
         self.btn_salamat2_8.setText(_translate("MainWindow", "درباره ما"))
 from . import resource_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())

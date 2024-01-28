@@ -34,10 +34,11 @@ from app.riazi.riaz import (
                     moadele_yek,moadele_do,delet_all_moadele,delete_all_moadele_marhale,
                     delete_all_mohase_mobara,mohasebe_moraba,mohasebe_mostatil,
                     delete_all_mohasebe_mosta,delete_mohasebe_mosalas,mohseb_mosalas,
-                    mohasebe_chand_zeli,delete_mohasebe_chand_zeli,tajzie,delete_all_tajzie)
+                    mohasebe_chand_zeli,delete_mohasebe_chand_zeli,tajzie,delete_all_tajzie,darsad_giri)
 from app.salamet.salamat import bmi ,delete_all_salamat
 from app.motarjem.translate import translator, trans_copy, delete_all_trans
 from app.wiki.wiki import wikii, wiki_copy, delete_all_wiki
+from app.map.test import showMap
 from app.riazi.gharbal import gharbal,delete_all_gharbal
 class screen(QMainWindow):
     def __init__(self):
@@ -257,6 +258,9 @@ class screen(QMainWindow):
 
     def on_btn_salamat2_9_clicked(self):
         self.ui.stackedWidget.setCurrentIndex(50)
+
+    def on_btn_aval_20_clicked(self):
+        self.ui.stackedWidget.setCurrentIndex(52)
 # physic pages
 
 
@@ -386,14 +390,14 @@ class screen(QMainWindow):
     def on_pushButton_37_clicked(self):
         delete_all_wiki(self)
     
-    # def on_pushButton_54_clicked(self):
-    #     chat_gptt(self)
+    def on_pushButton_54_clicked(self):
+        chat_gptt(self)
     
-    # def on_pushButton_53_clicked(self):
-    #     copy_chat(self)
+    def on_pushButton_53_clicked(self):
+        copy_chat(self)
     
-    # def on_pushButton_52_clicked(self):
-    #     delete_Chat(self)
+    def on_pushButton_52_clicked(self):
+        delete_Chat(self)
     
     def on_pushButton_32_clicked(self):
         etehad_moshtarak(self)
@@ -401,14 +405,14 @@ class screen(QMainWindow):
     def on_pushButton_55_clicked(self):
         delete_jom(self)
 
-    # def on_btn_salamat_5_clicked(Self):
-    #     showMap()
-    #     feshar_jamed
-    # def on_btn_salamat2_7_clicked(self):
-    #     showMap()
-    #     sender = QObject.sender(self)
-    #     sender.clicked.disconnect()
-    #     self.ui.btn_salamat2_7.clicked.connect(self.on_btn_salamat2_7_clicked)
+    def on_btn_salamat_5_clicked(Self):
+        showMap()
+        feshar_jamed
+    def on_btn_salamat2_7_clicked(self):
+        showMap()
+        sender = QObject.sender(self)
+        sender.clicked.disconnect()
+        self.ui.btn_salamat2_7.clicked.connect(self.on_btn_salamat2_7_clicked)
 
     def on_pushButton_45_clicked(self):
         inputt = self.ui.comboBox.currentText()
@@ -533,6 +537,13 @@ class screen(QMainWindow):
             event.accept()
         else:
             event.ignore()
+# darsad giri
+    def on_pushButton_215_clicked(self):
+        darsad_giri(self)
+        sender = QObject.sender(self)
+        sender.clicked.disconnect()
+        self.ui.pushButton_215.clicked.connect(self.on_pushButton_215_clicked)
+
 #back btns 
     def on_pushButton_74_clicked(self):
         self.ui.stackedWidget.setCurrentIndex(51)
