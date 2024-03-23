@@ -1,6 +1,8 @@
 # math_app
  Application of math, physics and teaching aids for high school students
-# Daneshwar application
+# Daneshwar application 
+![home page](image.png)
+
 
 ## Setup
 
